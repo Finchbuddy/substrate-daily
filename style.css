@@ -6,9 +6,9 @@
   --bg: #050608;
   --fg: #f9fafb;
   --fg-muted: #9ca3af;
-  --accent: #f97316;
-  --accent-soft: rgba(249, 115, 22, 0.16);
-  --border-subtle: rgba(55, 65, 81, 0.85);
+  --accent: #f97373;
+  --accent-soft: rgba(248, 113, 113, 0.18);
+  --border-subtle: rgba(248, 113, 113, 0.35);
   --shadow-soft: 0 32px 80px rgba(0, 0, 0, 0.95);
 }
 
@@ -16,7 +16,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
-  background: #02040a;
+  background:
+    radial-gradient(circle at top left, #020617 0, transparent 55%),
+    radial-gradient(circle at top right, #111827 0, transparent 55%),
+    linear-gradient(180deg, #020617, #050608 55%, #020617 100%);
   color: var(--fg);
   min-height: 100vh;
 }
@@ -26,8 +29,8 @@ body {
   top: 0;
   z-index: 10;
   backdrop-filter: blur(18px);
-  background: #02040a;
-  border-bottom: 1px solid rgba(31, 41, 55, 0.9);
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.98), rgba(127, 29, 29, 0.96));
+  border-bottom: 1px solid rgba(248, 113, 113, 0.4);
 }
 
 .header-inner {
@@ -50,7 +53,7 @@ body {
   width: 40px;
   height: 40px;
   border-radius: 999px;
-  border: 1px solid rgba(55, 65, 81, 0.95);
+  border: 1px solid rgba(248, 113, 113, 0.7);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -75,7 +78,7 @@ body {
   width: 38px;
   height: 38px;
   border-radius: 999px;
-  border: 1px solid rgba(55, 65, 81, 0.95);
+  border: 1px solid rgba(248, 113, 113, 0.6);
   background: transparent;
   display: flex;
   flex-direction: column;
@@ -142,7 +145,7 @@ body {
   border-radius: 999px;
   padding: 0.45rem 1.1rem;
   font-size: 0.9rem;
-  background: #111827;
+  background: #7f1d1d;
   color: var(--fg-muted);
 }
 
@@ -211,7 +214,7 @@ body {
 .about-card {
   max-width: 720px;
   margin: 2.4rem auto 0;
-  border-top: 1px solid rgba(31, 41, 55, 0.9);
+  border-top: 1px solid rgba(127, 29, 29, 0.9);
   padding-top: 1.4rem;
 }
 
